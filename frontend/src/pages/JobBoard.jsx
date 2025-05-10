@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import { fetchJobs, searchJobsByLocation } from "../services/jobService.js";
-import JobCard from "../components/jobCard";
-import JobDetails from "../components/jobDetails";
+import JobCard from "../components/JobCard";
+import JobDetails from "../components/JobDetails";
 
 const JobBoard = () => {
   const [jobs, setJobs] = useState([]);
