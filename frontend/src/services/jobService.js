@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:4000/api/jobs"; 
+const API_BASE_URL = "https://joblist-9ngj.onrender.com/api/jobs"; 
 
 export const fetchJobs = async () => {
   try {
