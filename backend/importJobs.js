@@ -63,13 +63,13 @@ async function importJobs() {
           await Job.insertMany(uniqueBatch, { ordered: false });
         }
       } catch (error) {
-        fs.appendFileSync("failed_jobs.log", JSON.stringify(error.writeErrors?.map(e => e.err.op), null, 2) + "\n");
+        console.lof(error);
       }
     }
 
     process.exit(0);
   } catch (error) {
-    fs.appendFileSync("failed_jobs.log", JSON.stringify(error.writeErrors?.map(e => e.err.op), null, 2) + "\n");
+   console.lof(error);
     process.exit(1);
   }
 }
